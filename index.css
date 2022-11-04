@@ -1,0 +1,141 @@
+:root {
+	--color-background: #121212;
+	/*--color-acent: #F4694D;*/
+	/*--color-acent: #FFD369;*/
+	--color-acent: #DC9754;
+	--color-light: #F9FBFC;
+
+	--max-width: 400px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--color-background);
+	font-family: monospace;
+}
+
+.container {
+	max-width: var(--max-width);
+	margin: auto;
+}
+
+header {
+	display: flex;
+	min-height: 120px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.header_title {
+	font-size: 3.3em;
+	font-weight: 400;
+	color: var(--color-light);
+}
+
+.main_miniatura {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main_miniatura figure {
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.main_miniatura figure img {
+	height: 100%;
+}
+
+.main_description {
+	display: block;
+	margin-top: 45px;
+	text-align: center;
+}
+
+.main_description p {
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	color: var(--color-light);
+}
+
+.main_links {
+	margin-top: 45px;
+	display: block;
+}
+
+.links_content {
+	display: flex;
+	width: 95%;
+	gap: 20px;
+	margin:  auto;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.links_content li {
+	transition: all ease 400ms;
+	display: flex;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	align-items: center;
+	border: 2px solid var(--color-light);
+}
+
+.links_content li:hover {
+	border-color: var(--color-acent);
+	background: var(--color-acent);
+}
+
+.links_content li a {
+	transition: all ease 400ms;
+	display: block;
+	width: 100%;
+	padding: 20px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--color-light);
+}
+
+.links_content li:hover > a {
+	color: var(--color-background);
+}
+
+footer {
+	display: block;
+	height: 100px;
+}
+
+.footer_social_media {
+	display: flex;
+	gap: 20px;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer_social_media li {
+	list-style: none;
+}
+
+.footer_social_media li a {
+	transition: all ease 400ms;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: var(--color-acent);
+}
+
+.footer_social_media li a:hover {
+	color: var(--color-light);
+}
