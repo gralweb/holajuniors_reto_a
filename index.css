@@ -1,8 +1,11 @@
+@import "./public/assets/fonts/import_fonts.css";
+
 :root {
 	--color-background: #121212;
 	/*--color-acent: #F4694D;*/
 	/*--color-acent: #FFD369;*/
-	--color-acent: #DC9754;
+	/*#DC9754;*/
+	--color-acent: #F4694D;
 	--color-light: #F9FBFC;
 
 	--max-width: 400px;
@@ -16,7 +19,7 @@
 
 body {
 	background: var(--color-background);
-	font-family: monospace;
+	font-family: 'pitter';
 }
 
 .container {
@@ -33,7 +36,8 @@ header {
 }
 
 .header_title {
-	font-size: 3.3em;
+	text-transform: uppercase;
+	font-size: 4.8em;
 	font-weight: 400;
 	color: var(--color-light);
 }
@@ -49,6 +53,7 @@ header {
 	height: 250px;
 	overflow: hidden;
 	border-radius: 50%;
+	/*border: 3px solid var(--color-light);*/
 }
 
 .main_miniatura figure img {
@@ -62,9 +67,10 @@ header {
 }
 
 .main_description p {
-	font-weight: bold;
-	font-size: 1.2em;
-	line-height: 1.4em;
+	letter-spacing: 3px;
+	font-weight: 400;
+	font-size: 1.7em;
+	text-transform: uppercase;
 	color: var(--color-light);
 }
 
@@ -88,6 +94,7 @@ header {
 	width: 100%;
 	list-style: none;
 	text-align: center;
+	border-radius: 3px;
 	align-items: center;
 	border: 2px solid var(--color-light);
 }
@@ -101,10 +108,12 @@ header {
 	transition: all ease 400ms;
 	display: block;
 	width: 100%;
-	padding: 20px 0;
-	font-size: 1.2em;
-	font-weight: bold;
+	font-size: 2em;
+	padding: 15px 0;
+	font-weight: 400;
+	letter-spacing: 3px;
 	text-decoration: none;
+	text-transform: uppercase;
 	color: var(--color-light);
 }
 
@@ -133,9 +142,9 @@ footer {
 	transition: all ease 400ms;
 	text-decoration: none;
 	font-size: 1.5em;
-	color: var(--color-acent);
+	color: var(--color-light);
 }
 
 .footer_social_media li a:hover {
-	color: var(--color-light);
+	color: var(--color-acent);
 }
